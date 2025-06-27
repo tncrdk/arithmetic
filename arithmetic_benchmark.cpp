@@ -33,6 +33,8 @@ void cpu_float_benchmark(long iterations) {
 void run() {
     long num_iterations = 500000000; // Adjust as needed for desired duration
 
+    std::cout << "------------------------" << std::endl;
+
     // --- Integer Benchmark ---
     std::cout << "Benchmarking CPU Integer Operations (" << num_iterations << " iterations)..." << std::endl;
     auto start_int = std::chrono::high_resolution_clock::now();
@@ -48,6 +50,8 @@ void run() {
     auto end_float = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration_float = end_float - start_float;
     std::cout << "Floating-point operations time: " << duration_float.count() << " seconds" << std::endl;
+
+    std::cout << "------------------------\n" << std::endl;
 }
 
 } // namespace arithmetic_benchmark
