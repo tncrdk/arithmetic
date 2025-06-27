@@ -1,0 +1,11 @@
+# arithmetic_benchmark/arithmetic_benchmarkConfig.cmake.in
+# This file is generated during installation and helps find_package(arithmetic_benchmark) locate the library.
+
+# Provide the installed targets
+include("${CMAKE_CURRENT_LIST_DIR}/arithmetic_benchmark_targets.cmake")
+
+# Set the public include directories for consumers of arithmetic_benchmark
+set(arithmetic_benchmark_INCLUDE_DIRS "${CMAKE_INSTALL_PREFIX}/include")
+
+# Define variables that indicate the library was found
+set(arithmetic_benchmark_FOUND TRUE)
